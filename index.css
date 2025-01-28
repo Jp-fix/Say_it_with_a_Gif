@@ -29,7 +29,8 @@ h1{
     width: 400px;
     margin: 20px auto 20px auto;
 }
-label{
+
+label-gif-message-selector{
     font-size: 25px;
     text-shadow:#0a0a0a 1px 1px 1px;
 }
@@ -97,4 +98,19 @@ select{
     cursor: pointer;
     border: 0px;
     
+}
+.sharing-space{
+    display: flex;
+    justify-content: space-between;
+    /*background-color: rgba(186, 179, 179, 0.8);*/
+    border-radius: 5px;
+    color: whitesmoke;
+    text-shadow: #313437 1px 1px 2px;
+    width: 200px;
+    margin: 20px auto 20px auto;
+}
+.share-btn, .download-btn{
+    margin: 5px 0 0 0;
+    width: auto;
+    border-radius: 5px;
 }

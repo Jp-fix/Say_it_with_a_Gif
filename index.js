@@ -5,10 +5,13 @@ const sendBtn = document.getElementById("send-btn")
 const modalContainer = document.getElementById("modal-container")
 const modalContent = document.getElementById("modal-content")
 const closeModalContainer = document.getElementById("close-modal-container")
+const shareBtn = document.getElementById("share-btn")
+const downloadBtn = document.getElementById("download-btn")
 
 gifMessageSelector.addEventListener("change", messageSelection)
 sendBtn.addEventListener("click", renderMessageGif)
 closeModalContainer.addEventListener("click", closeModal)
+downloadBtn.addEventListener("click",downloadGif)
 
 function messageSelection(){
 
@@ -44,4 +47,8 @@ function renderMessageGif(){
             <img src= "${selectedGif[0].url}" alt= "${selectedGif[0].alt}">
         </div> 
     ` 
+}
+
+function downloadGif(){
+    `document.getElementById("download-btn").href = ${selectedGif[0].url}`
 }
