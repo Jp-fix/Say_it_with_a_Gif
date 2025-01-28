@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Say it with a gif</title>   
+</head>
+<body>
+    <h1>
+        Better than Words 
+        <br>Say it with a Gif
+    </h1>
+    
+
+<div class="main-app">
+    <div class="message-selector" id="message-selector">
+        <label for="gif-message-selector">Choisi ton message</label>
+        <select name="gif" id="gif-message-selector" class="gif-message-selector" size="3" >
+
+         <option value="yes">Tu es le meilleur !</option>
+         <option value="silence">Taisez-vous !</option>
+         <option value="zen">J'ai besoin d'air frais !</option>
+        </select>
+    </div>
+    <button class="send-btn" id="send-btn">Get gif</button>
+</div>
+<div class="modal-container" id="modal-container">
+    <button class="close-modal-container" id="close-modal-container">X</button>
+    <div class="modal-content" id="modal-content">
+    </div>
+</div>
+<script src="index.js" type="module"></script>
+</body>
+</html>
